@@ -19,7 +19,7 @@ $(function() {
   
   
   // fetch from a json file
-  fetchJSON('data.json', function(err, data) {
+  fetchJSON('static/source/data.json', function(err, data) {
     if (err) return alert(JSON.stringify(err))
     allData = data
     //create results count
