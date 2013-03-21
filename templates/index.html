@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <title>Early Childhood Services in Oakland</title>
+  <title>Early Childhood Services in San Francisco</title>
   <meta charset='utf-8' />
   <meta content='width=device-width, initial-scale=1.0' name='viewport' />
   <meta content='' name='description' />
@@ -29,7 +29,7 @@
   <div class='navbar'>
     <div class='navbar-inner'>
       <div class='container'>
-        <a class='brand'>Early Childhood Services in Oakland</a>
+        <a class='brand'>Early Childhood Services in San Francisco</a>
       </div>
     </div>
   </div>
@@ -39,7 +39,7 @@
         <p>
           <img src='static/images/oologo.png'></p>
         <p>
-          This site is provided as a resource to help you find free or low cost services for young children in Oakland. You can find Head Starts, Child Development Centers and Early Head Starts. It is provided as a free resource by OpenOakland and the Oakland Education Cabinet
+          This site is provided as a resource to help you find free or low cost services for young children in San Francisco. You can find Head Starts, Child Development Centers and Early Head Starts. It is provided as a free resource by OpenSan Francisco and the San Francisco Education Cabinet
           <a href='about.html'>Read more &raquo;</a>
         </p>
         <div class='well'>
@@ -58,7 +58,7 @@
         <div class='well'>
           <!-- Once you decide what filter you want, place the HTML code here. The section in the maps_lib.js is also marked. Once you're done, feel free to delete this explanatory section. -->
 
-        <p class='alert alert-info lead' id='result_count'></p>
+          <p class='alert alert-info lead' id='result_count'></p>
 
           <h4>Types of Program</h4>
           <ul class='inputs-list unstyled'>
@@ -87,7 +87,7 @@
               <label data-key='Type' data-value='OUSD' class='checkbox inline'>
                 <input type='checkbox' id='cbType4' />
                 <span class='filter-box filter-yellow'></span>
-                Oakland Unified School District
+                San Francisco Unified School District
               </label>
             </li>
           </ul>
@@ -157,21 +157,11 @@
           </ul>
 
         </div>
-        
+
         <div class='well'>
           <div id='results_list'></div>
         </div>
 
-      </div>
-
-      <div class='span8'>
-        <div id='map_canvas'></div>
-        <p class='pull-right'>
-          <a href='http://openoakland.org'>Brought to you by OpenOakland</a>
-          &
-          <a href='http://oaklandnet.com'>the Oakland Education Cabinet</a>
-          .
-        </p>
       </div>
     </div>
   </div>
@@ -185,50 +175,48 @@
         <h6>Program Details</h6>
         <hr>
         <dl class="dl-horizontal">
-            <% if ( typeof director_name !== 'undefined' ) { %> 
+            <% if ( typeof director_name !== 'undefined' ) { %>
                 <dt><small><%= director_name.name %>:</small></dt>
                 <dd><small><%= director_name.value %></small></dd>
             <% } %>
 
-            <% if ( typeof ages_served !== 'undefined' ) { %> 
+            <% if ( typeof ages_served !== 'undefined' ) { %>
                 <dt><small><%= ages_served.name %>:</small></dt>
                 <dd><small><%= ages_served.value %></small></dd>
             <% } %>
 
-            <% if ( typeof web_address !== 'undefined' ) { %> 
+            <% if ( typeof web_address !== 'undefined' ) { %>
                 <dt><small><%= web_address.name %>:</small></dt>
                 <dd><small><a href="<%= web_address.value %>"><%= web_address.value %></a></small></dd>
             <% } %>
-            
-            <% if ( half_day.value === 'yes' || full_day.value === 'yes' ) { 
-                    if ( half_day.value === 'yes' && full_day.value === 'yes' ) { 
+
+            <% if ( half_day.value === 'yes' || full_day.value === 'yes' ) {
+                    if ( half_day.value === 'yes' && full_day.value === 'yes' ) {
                         var time = half_day.name + ' and ' + full_day.name
-                    } else if ( half_day.value === 'yes' ) { 
-                        var time = half_day.name 
+                    } else if ( half_day.value === 'yes' ) {
+                        var time = half_day.name
                     } else {
-                        var time = full_day.name 
-                    } %> 
+                        var time = full_day.name
+                    } %>
 
                 <dt><small>Time</small>:</dt>
                 <dd><small><%= time %></a></small></dd>
             <% } %>
 
-            <% if ( before_school.value === 'yes' || after_school.value === 'yes' ) { 
-                    if ( before_school.value === 'yes' && after_school.value === 'yes' ) { 
+            <% if ( before_school.value === 'yes' || after_school.value === 'yes' ) {
+                    if ( before_school.value === 'yes' && after_school.value === 'yes' ) {
                         var school_hours = before_school.name + ' or ' + after_school.name
-                    } else if ( before_school.value === 'yes' ) { 
-                        var school_hours = before_school.name 
+                    } else if ( before_school.value === 'yes' ) {
+                        var school_hours = before_school.name
                     } else {
-                        var school_hours = after_school.name 
-                    } %> 
+                        var school_hours = after_school.name
+                    } %>
 
                 <dt><small>School Hours</small>:</dt>
                 <dd><small><%= school_hours %></a></small></dd>
-            <% } %>
-        </dl>
+            <% } %></dl>
     </div>
   </script>
 
-  
 </body>
 </html>

@@ -1,8 +1,6 @@
-# Oakland Early Childhood Services Adaptations:
+# San Francisco Early Childhood Services Adaptations:
 
-Data file : https://github.com/openoakland/EarlyOakland/blob/gh-pages/data.json
-
-Forked from [![Searchable Map Template screenshot](http://derekeder.com/images/map-template-screenshot.png)](http://derekeder.com/searchable_map_template/demo/index.html)
+Forked from [http://derekeder.com/searchable_map_template/demo/index.html](http://derekeder.com/searchable_map_template/demo/index.html)
 
 ## Features
 
@@ -12,7 +10,7 @@ Forked from [![Searchable Map Template screenshot](http://derekeder.com/images/m
 * geolocation (find me!)
 * ability to easily add additional search filters (checkboxes, sliders, etc)
 * all done with HTML, CSS and Javascript - no server side code required
-  
+
 ## Dependencies
 
 * [Google Maps API V3](https://developers.google.com/maps/documentation/javascript)
@@ -23,6 +21,6 @@ Forked from [![Searchable Map Template screenshot](http://derekeder.com/images/m
 
 ## Copyright
 
-Copyright (c) 2013 Open Oakland & 2011 Derek Eder. Released under the MIT License.
+Copyright (c) 2011 Derek Eder. Released under the MIT License.
 
 See LICENSE for details.
